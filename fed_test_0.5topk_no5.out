@@ -1,0 +1,1921 @@
+Namespace(conf='../conf/EMNIST_balance_conf.json', dataset='mnist', gpu=1.0, iid=True, use_pretrained_model=False)
+X shape : (36000, 28, 28)
+y shape : (36000,)
+X shape : (6000, 28, 28)
+y shape : (6000,)
+15    6000
+14    6000
+13    6000
+12    6000
+11    6000
+10    6000
+dtype: int64
+============================================================
+============================================================
+X shape : (6000, 28, 28)
+y shape : (6000,)
+model 0 : CNN_128_256
+model 1 : CNN_128_384
+model 2 : CNN_128_512
+model 3 : CNN_256_256
+model 4 : CNN_256_512
+model 5 : CNN_64_128_256
+model 6 : CNN_64_128_192
+model 7 : CNN_128_192_256
+model 8 : CNN_128_128_128
+model 9 : CNN_128_128_192
+Training model  0
+Training model  1
+Training model  2
+Training model  3
+Training model  4
+Training model  5
+Training model  6
+Training model  7
+Training model  8
+Training model  9
+pre-train accuracy: 
+[0.9872428797468354, 0.9880340189873418, 0.9859572784810127, 0.9873417721518988, 0.9866495253164557, 0.9902096518987342, 0.9919897151898734, 0.9920886075949367, 0.9921875, 0.9900118670886076]
+calculate the theoretical upper bounds for participants: 
+the upper bounds are: [0.8600398936170213, 0.8628656914893617, 0.8673537234042553, 0.8626994680851063, 0.8668550531914894, 0.8693484042553191, 0.8583776595744681, 0.8656914893617021, 0.8622007978723404, 0.8592087765957447]
+start model initialization: 
+finish model initialization: 
+round  0
+update logits ... 
+cosdist:
+[[1, 0.977382008386269, 0.9876411766418897, 0.986519713527214, 0.9854795105878321, 0.9688661978323628, 0.9657735705916086, 0.9725758126232492, 0.9489179430290112, 0.9713572984309555], [0.977382008386269, 1, 0.9890472028839927, 0.9837952122760449, 0.9839215943576244, 0.9691170406908429, 0.9545344344191227, 0.9535161179085837, 0.9206445981938993, 0.9587050593916892], [0.9876411766418897, 0.9890472028839927, 1, 0.990406616816686, 0.9871448485292217, 0.9677325452791292, 0.9567449884358965, 0.9647163355310832, 0.9352826303436335, 0.9657829509709065], [0.986519713527214, 0.9837952122760449, 0.990406616816686, 1, 0.989192321272628, 0.972373665984229, 0.9635882210849633, 0.9732496575605076, 0.9445177059408484, 0.977466660175218], [0.9854795105878321, 0.9839215943576244, 0.9871448485292217, 0.989192321272628, 1, 0.9750205778840184, 0.9731591625962083, 0.9756827222949392, 0.9525721491414223, 0.9746456407070984], [0.9688661978323628, 0.9691170406908429, 0.9677325452791292, 0.972373665984229, 0.9750205778840184, 1, 0.983681034647095, 0.9817662617004889, 0.9616044375319268, 0.9797631911229079], [0.9657735705916086, 0.9545344344191227, 0.9567449884358965, 0.9635882210849633, 0.9731591625962083, 0.983681034647095, 1, 0.9816838245616278, 0.97642858208208, 0.9816101538425466], [0.9725758126232492, 0.9535161179085837, 0.9647163355310832, 0.9732496575605076, 0.9756827222949392, 0.9817662617004889, 0.9816838245616278, 1, 0.9742273946322016, 0.9851259938004341], [0.9489179430290112, 0.9206445981938993, 0.9352826303436335, 0.9445177059408484, 0.9525721491414223, 0.9616044375319268, 0.97642858208208, 0.9742273946322016, 1, 0.9749375012821572], [0.9713572984309555, 0.9587050593916892, 0.9657829509709065, 0.977466660175218, 0.9746456407070984, 0.9797631911229079, 0.9816101538425466, 0.9851259938004341, 0.9749375012821572, 1]]
+model_num of model 0 used
+-- 5 --
+model_num of model 1 used
+-- 5 --
+model_num of model 2 used
+-- 5 --
+model_num of model 3 used
+-- 5 --
+model_num of model 4 used
+-- 5 --
+model_num of model 5 used
+-- 5 --
+model_num of model 6 used
+-- 5 --
+model_num of model 7 used
+-- 5 --
+model_num of model 8 used
+-- 5 --
+model_num of model 9 used
+-- 5 --
+test performance ... 
+0.6813497340425532
+0.6575797872340425
+0.734873670212766
+0.721908244680851
+0.7172539893617021
+0.7330452127659575
+0.7212433510638298
+0.6888297872340425
+0.7298869680851063
+0.7418550531914894
+updates models ...
+model 0 starting alignment with public logits... 
+model 0 done alignment
+model 0 starting training with private data... 
+model 0 done private training. 
+
+model 1 starting alignment with public logits... 
+model 1 done alignment
+model 1 starting training with private data... 
+model 1 done private training. 
+
+model 2 starting alignment with public logits... 
+model 2 done alignment
+model 2 starting training with private data... 
+model 2 done private training. 
+
+model 3 starting alignment with public logits... 
+model 3 done alignment
+model 3 starting training with private data... 
+model 3 done private training. 
+
+model 4 starting alignment with public logits... 
+model 4 done alignment
+model 4 starting training with private data... 
+model 4 done private training. 
+
+model 5 starting alignment with public logits... 
+model 5 done alignment
+model 5 starting training with private data... 
+model 5 done private training. 
+
+model 6 starting alignment with public logits... 
+model 6 done alignment
+model 6 starting training with private data... 
+model 6 done private training. 
+
+model 7 starting alignment with public logits... 
+model 7 done alignment
+model 7 starting training with private data... 
+model 7 done private training. 
+
+model 8 starting alignment with public logits... 
+model 8 done alignment
+model 8 starting training with private data... 
+model 8 done private training. 
+
+model 9 starting alignment with public logits... 
+model 9 done alignment
+model 9 starting training with private data... 
+model 9 done private training. 
+
+round  1
+update logits ... 
+cosdist:
+[[1, 0.9915330645202254, 0.9959442615230908, 0.9910847795651688, 0.9956358534447567, 0.9906193841912045, 0.9904855288911931, 0.9926567312020065, 0.9901822905836735, 0.9920058607860779], [0.9915330645202254, 1, 0.993840582589293, 0.9918804690554186, 0.9939054385582002, 0.9930712498631661, 0.9933753305530301, 0.9884150260542892, 0.9915165854651927, 0.990085162656259], [0.9959442615230908, 0.993840582589293, 1, 0.9948738109367659, 0.9953836606331304, 0.9938504911190075, 0.9929646354088102, 0.9948935868909092, 0.9939964566620751, 0.9947303102517264], [0.9910847795651688, 0.9918804690554186, 0.9948738109367659, 1, 0.9924073869742948, 0.9928810614810594, 0.9917780942460073, 0.9933159949371326, 0.9934569483967178, 0.995301177608621], [0.9956358534447567, 0.9939054385582002, 0.9953836606331304, 0.9924073869742948, 1, 0.9918847243289866, 0.9916880531222959, 0.9925802912376779, 0.9912168895778571, 0.9913442104468659], [0.9906193841912045, 0.9930712498631661, 0.9938504911190075, 0.9928810614810594, 0.9918847243289866, 1, 0.9959125634048993, 0.9953732301226091, 0.996187037788222, 0.9949621003188842], [0.9904855288911931, 0.9933753305530301, 0.9929646354088102, 0.9917780942460073, 0.9916880531222959, 0.9959125634048993, 1, 0.9927645517511974, 0.9965740554815062, 0.9946506767099861], [0.9926567312020065, 0.9884150260542892, 0.9948935868909092, 0.9933159949371326, 0.9925802912376779, 0.9953732301226091, 0.9927645517511974, 1, 0.9949030031235158, 0.9956972894356508], [0.9901822905836735, 0.9915165854651927, 0.9939964566620751, 0.9934569483967178, 0.9912168895778571, 0.996187037788222, 0.9965740554815062, 0.9949030031235158, 1, 0.9962184430244991], [0.9920058607860779, 0.990085162656259, 0.9947303102517264, 0.995301177608621, 0.9913442104468659, 0.9949621003188842, 0.9946506767099861, 0.9956972894356508, 0.9962184430244991, 1]]
+model_num of model 0 used
+-- 5 --
+model_num of model 1 used
+-- 5 --
+model_num of model 2 used
+-- 5 --
+model_num of model 3 used
+-- 5 --
+model_num of model 4 used
+-- 5 --
+model_num of model 5 used
+-- 5 --
+model_num of model 6 used
+-- 5 --
+model_num of model 7 used
+-- 5 --
+model_num of model 8 used
+-- 5 --
+model_num of model 9 used
+-- 5 --
+test performance ... 
+0.7480053191489362
+0.7461768617021277
+0.7649601063829787
+0.7011303191489362
+0.6996343085106383
+0.7478390957446809
+0.7071143617021277
+0.6469414893617021
+0.761968085106383
+0.7501662234042553
+updates models ...
+model 0 starting alignment with public logits... 
+model 0 done alignment
+model 0 starting training with private data... 
+model 0 done private training. 
+
+model 1 starting alignment with public logits... 
+model 1 done alignment
+model 1 starting training with private data... 
+model 1 done private training. 
+
+model 2 starting alignment with public logits... 
+model 2 done alignment
+model 2 starting training with private data... 
+model 2 done private training. 
+
+model 3 starting alignment with public logits... 
+model 3 done alignment
+model 3 starting training with private data... 
+model 3 done private training. 
+
+model 4 starting alignment with public logits... 
+model 4 done alignment
+model 4 starting training with private data... 
+model 4 done private training. 
+
+model 5 starting alignment with public logits... 
+model 5 done alignment
+model 5 starting training with private data... 
+model 5 done private training. 
+
+model 6 starting alignment with public logits... 
+model 6 done alignment
+model 6 starting training with private data... 
+model 6 done private training. 
+
+model 7 starting alignment with public logits... 
+model 7 done alignment
+model 7 starting training with private data... 
+model 7 done private training. 
+
+model 8 starting alignment with public logits... 
+model 8 done alignment
+model 8 starting training with private data... 
+model 8 done private training. 
+
+model 9 starting alignment with public logits... 
+model 9 done alignment
+model 9 starting training with private data... 
+model 9 done private training. 
+
+round  2
+update logits ... 
+cosdist:
+[[1, 0.9949601151424473, 0.9963134025666317, 0.9975698712401507, 0.9963852253636508, 0.996118680455177, 0.9959515955181601, 0.9963347139518325, 0.995412378583693, 0.9967136055956669], [0.9949601151424473, 1, 0.996068836663372, 0.9950007264924267, 0.9977222157196063, 0.9960727252553727, 0.9937555726647578, 0.9925820621793152, 0.9934720277896664, 0.9948118764482825], [0.9963134025666317, 0.996068836663372, 1, 0.996705044501365, 0.9980832410042008, 0.9961149247717063, 0.994528978885237, 0.9946332786842583, 0.9931366155660506, 0.9968156479730782], [0.9975698712401507, 0.9950007264924267, 0.996705044501365, 1, 0.9967166661020539, 0.99650703179211, 0.9964176574774448, 0.9972057320499044, 0.9962472583817895, 0.9971193921103991], [0.9963852253636508, 0.9977222157196063, 0.9980832410042008, 0.9967166661020539, 1, 0.9966440868019696, 0.9950459328413305, 0.9944043969365621, 0.994732956670163, 0.9962070545964002], [0.996118680455177, 0.9960727252553727, 0.9961149247717063, 0.99650703179211, 0.9966440868019696, 1, 0.9979584324037503, 0.9973734468925298, 0.9975267944648684, 0.9977678791217747], [0.9959515955181601, 0.9937555726647578, 0.994528978885237, 0.9964176574774448, 0.9950459328413305, 0.9979584324037503, 1, 0.9982687783928538, 0.9980667312312435, 0.9971143358814505], [0.9963347139518325, 0.9925820621793152, 0.9946332786842583, 0.9972057320499044, 0.9944043969365621, 0.9973734468925298, 0.9982687783928538, 1, 0.9974622371632776, 0.9971855885001847], [0.995412378583693, 0.9934720277896664, 0.9931366155660506, 0.9962472583817895, 0.994732956670163, 0.9975267944648684, 0.9980667312312435, 0.9974622371632776, 1, 0.9963793358074844], [0.9967136055956669, 0.9948118764482825, 0.9968156479730782, 0.9971193921103991, 0.9962070545964002, 0.9977678791217747, 0.9971143358814505, 0.9971855885001847, 0.9963793358074844, 1]]
+model_num of model 0 used
+-- 5 --
+model_num of model 1 used
+-- 5 --
+model_num of model 2 used
+-- 5 --
+model_num of model 3 used
+-- 5 --
+model_num of model 4 used
+-- 5 --
+model_num of model 5 used
+-- 5 --
+model_num of model 6 used
+-- 5 --
+model_num of model 7 used
+-- 5 --
+model_num of model 8 used
+-- 5 --
+model_num of model 9 used
+-- 5 --
+test performance ... 
+0.6993018617021277
+0.6766954787234043
+0.7486702127659575
+0.7283909574468085
+0.7593085106382979
+0.7558178191489362
+0.6903257978723404
+0.6484375
+0.7508311170212766
+0.793218085106383
+updates models ...
+model 0 starting alignment with public logits... 
+model 0 done alignment
+model 0 starting training with private data... 
+model 0 done private training. 
+
+model 1 starting alignment with public logits... 
+model 1 done alignment
+model 1 starting training with private data... 
+model 1 done private training. 
+
+model 2 starting alignment with public logits... 
+model 2 done alignment
+model 2 starting training with private data... 
+model 2 done private training. 
+
+model 3 starting alignment with public logits... 
+model 3 done alignment
+model 3 starting training with private data... 
+model 3 done private training. 
+
+model 4 starting alignment with public logits... 
+model 4 done alignment
+model 4 starting training with private data... 
+model 4 done private training. 
+
+model 5 starting alignment with public logits... 
+model 5 done alignment
+model 5 starting training with private data... 
+model 5 done private training. 
+
+model 6 starting alignment with public logits... 
+model 6 done alignment
+model 6 starting training with private data... 
+model 6 done private training. 
+
+model 7 starting alignment with public logits... 
+model 7 done alignment
+model 7 starting training with private data... 
+model 7 done private training. 
+
+model 8 starting alignment with public logits... 
+model 8 done alignment
+model 8 starting training with private data... 
+model 8 done private training. 
+
+model 9 starting alignment with public logits... 
+model 9 done alignment
+model 9 starting training with private data... 
+model 9 done private training. 
+
+round  3
+update logits ... 
+cosdist:
+[[1, 0.9979998605161443, 0.9989671202445105, 0.9980334796946678, 0.9984830466544137, 0.9967767757974585, 0.9962204368877703, 0.9972319903596726, 0.9964663657435465, 0.9969393060099007], [0.9979998605161443, 1, 0.9976685954379529, 0.9984593248286381, 0.9983602700888887, 0.9971087140365607, 0.9968060945869489, 0.9964431127149668, 0.996658717748957, 0.99717787889406], [0.9989671202445105, 0.9976685954379529, 1, 0.9977544192594335, 0.9987315244874992, 0.9967205939587386, 0.9955952093654529, 0.9967909216618465, 0.9955328251007197, 0.996650563720682], [0.9980334796946678, 0.9984593248286381, 0.9977544192594335, 1, 0.9985509756534675, 0.9974034420834017, 0.9971856830646884, 0.9973104967744694, 0.9969052834391091, 0.9971400605510214], [0.9984830466544137, 0.9983602700888887, 0.9987315244874992, 0.9985509756534675, 1, 0.99742795555812, 0.9965568460983326, 0.9968025498945106, 0.9959989595051648, 0.9966534085206901], [0.9967767757974585, 0.9971087140365607, 0.9967205939587386, 0.9974034420834017, 0.99742795555812, 1, 0.9987123291288316, 0.9969620548248331, 0.9977081315891732, 0.998165637332485], [0.9962204368877703, 0.9968060945869489, 0.9955952093654529, 0.9971856830646884, 0.9965568460983326, 0.9987123291288316, 1, 0.9976871360741898, 0.9987946189620411, 0.99848071979278], [0.9972319903596726, 0.9964431127149668, 0.9967909216618465, 0.9973104967744694, 0.9968025498945106, 0.9969620548248331, 0.9976871360741898, 1, 0.9982317611439866, 0.9981513265369398], [0.9964663657435465, 0.996658717748957, 0.9955328251007197, 0.9969052834391091, 0.9959989595051648, 0.9977081315891732, 0.9987946189620411, 0.9982317611439866, 1, 0.9987976203459713], [0.9969393060099007, 0.99717787889406, 0.996650563720682, 0.9971400605510214, 0.9966534085206901, 0.998165637332485, 0.99848071979278, 0.9981513265369398, 0.9987976203459713, 1]]
+model_num of model 0 used
+-- 5 --
+model_num of model 1 used
+-- 5 --
+model_num of model 2 used
+-- 5 --
+model_num of model 3 used
+-- 5 --
+model_num of model 4 used
+-- 5 --
+model_num of model 5 used
+-- 5 --
+model_num of model 6 used
+-- 5 --
+model_num of model 7 used
+-- 5 --
+model_num of model 8 used
+-- 5 --
+model_num of model 9 used
+-- 5 --
+test performance ... 
+0.7636303191489362
+0.6459441489361702
+0.7760970744680851
+0.7265625
+0.7741023936170213
+0.754155585106383
+0.7566489361702128
+0.6707114361702128
+0.7524933510638298
+0.7466755319148937
+updates models ...
+model 0 starting alignment with public logits... 
+model 0 done alignment
+model 0 starting training with private data... 
+model 0 done private training. 
+
+model 1 starting alignment with public logits... 
+model 1 done alignment
+model 1 starting training with private data... 
+model 1 done private training. 
+
+model 2 starting alignment with public logits... 
+model 2 done alignment
+model 2 starting training with private data... 
+model 2 done private training. 
+
+model 3 starting alignment with public logits... 
+model 3 done alignment
+model 3 starting training with private data... 
+model 3 done private training. 
+
+model 4 starting alignment with public logits... 
+model 4 done alignment
+model 4 starting training with private data... 
+model 4 done private training. 
+
+model 5 starting alignment with public logits... 
+model 5 done alignment
+model 5 starting training with private data... 
+model 5 done private training. 
+
+model 6 starting alignment with public logits... 
+model 6 done alignment
+model 6 starting training with private data... 
+model 6 done private training. 
+
+model 7 starting alignment with public logits... 
+model 7 done alignment
+model 7 starting training with private data... 
+model 7 done private training. 
+
+model 8 starting alignment with public logits... 
+model 8 done alignment
+model 8 starting training with private data... 
+model 8 done private training. 
+
+model 9 starting alignment with public logits... 
+model 9 done alignment
+model 9 starting training with private data... 
+model 9 done private training. 
+
+round  4
+update logits ... 
+cosdist:
+[[1, 0.9977913188747459, 0.9979281444339059, 0.9967711278146539, 0.9977147364606486, 0.9960922853733322, 0.9964564215729067, 0.9967031864535716, 0.9959631452852254, 0.9965304313064666], [0.9977913188747459, 1, 0.9977502578976954, 0.9984637020247755, 0.9983484037457335, 0.9980823423132709, 0.9972610654519894, 0.9981939339752882, 0.9969008005406937, 0.9979615585037], [0.9979281444339059, 0.9977502578976954, 1, 0.9978351295284202, 0.9990130965403391, 0.9958116419413668, 0.9938223157105809, 0.9958087549732995, 0.9933717168050027, 0.9949354287381753], [0.9967711278146539, 0.9984637020247755, 0.9978351295284202, 1, 0.9986845503113753, 0.9979403569875732, 0.9958334697240293, 0.9977269975413513, 0.9963751039769583, 0.9967071656911048], [0.9977147364606486, 0.9983484037457335, 0.9990130965403391, 0.9986845503113753, 1, 0.9968292954433777, 0.9947647633177764, 0.9964909333920601, 0.9947121735207538, 0.9957653245479272], [0.9960922853733322, 0.9980823423132709, 0.9958116419413668, 0.9979403569875732, 0.9968292954433777, 1, 0.9983350572065602, 0.9989424867571901, 0.9982117864310973, 0.998454871739145], [0.9964564215729067, 0.9972610654519894, 0.9938223157105809, 0.9958334697240293, 0.9947647633177764, 0.9983350572065602, 1, 0.9985704552846181, 0.9988780781387792, 0.9984817211645457], [0.9967031864535716, 0.9981939339752882, 0.9958087549732995, 0.9977269975413513, 0.9964909333920601, 0.9989424867571901, 0.9985704552846181, 1, 0.9984939436752165, 0.9983686221246573], [0.9959631452852254, 0.9969008005406937, 0.9933717168050027, 0.9963751039769583, 0.9947121735207538, 0.9982117864310973, 0.9988780781387792, 0.9984939436752165, 1, 0.9982111908264515], [0.9965304313064666, 0.9979615585037, 0.9949354287381753, 0.9967071656911048, 0.9957653245479272, 0.998454871739145, 0.9984817211645457, 0.9983686221246573, 0.9982111908264515, 1]]
+model_num of model 0 used
+-- 5 --
+model_num of model 1 used
+-- 5 --
+model_num of model 2 used
+-- 5 --
+model_num of model 3 used
+-- 5 --
+model_num of model 4 used
+-- 5 --
+model_num of model 5 used
+-- 5 --
+model_num of model 6 used
+-- 5 --
+model_num of model 7 used
+-- 5 --
+model_num of model 8 used
+-- 5 --
+model_num of model 9 used
+-- 5 --
+test performance ... 
+0.7486702127659575
+0.7049534574468085
+0.7717752659574468
+0.7295545212765957
+0.7882313829787234
+0.7682845744680851
+0.7548204787234043
+0.6889960106382979
+0.7752659574468085
+0.6840093085106383
+updates models ...
+model 0 starting alignment with public logits... 
+model 0 done alignment
+model 0 starting training with private data... 
+model 0 done private training. 
+
+model 1 starting alignment with public logits... 
+model 1 done alignment
+model 1 starting training with private data... 
+model 1 done private training. 
+
+model 2 starting alignment with public logits... 
+model 2 done alignment
+model 2 starting training with private data... 
+model 2 done private training. 
+
+model 3 starting alignment with public logits... 
+model 3 done alignment
+model 3 starting training with private data... 
+model 3 done private training. 
+
+model 4 starting alignment with public logits... 
+model 4 done alignment
+model 4 starting training with private data... 
+model 4 done private training. 
+
+model 5 starting alignment with public logits... 
+model 5 done alignment
+model 5 starting training with private data... 
+model 5 done private training. 
+
+model 6 starting alignment with public logits... 
+model 6 done alignment
+model 6 starting training with private data... 
+model 6 done private training. 
+
+model 7 starting alignment with public logits... 
+model 7 done alignment
+model 7 starting training with private data... 
+model 7 done private training. 
+
+model 8 starting alignment with public logits... 
+model 8 done alignment
+model 8 starting training with private data... 
+model 8 done private training. 
+
+model 9 starting alignment with public logits... 
+model 9 done alignment
+model 9 starting training with private data... 
+model 9 done private training. 
+
+round  5
+update logits ... 
+cosdist:
+[[1, 0.9979457334542139, 0.9970896203773044, 0.9984643019020581, 0.9969633572502489, 0.9974351591334155, 0.9967177858122079, 0.9971146721301697, 0.9971969990467686, 0.9980915644204437], [0.9979457334542139, 1, 0.9985692960011098, 0.9983939277628073, 0.9992036594273627, 0.9975590056806908, 0.995790165733491, 0.9959569877876862, 0.9956404132190135, 0.9967150079041476], [0.9970896203773044, 0.9985692960011098, 1, 0.9975731098314122, 0.998686547946945, 0.9964706506810657, 0.9942931625967936, 0.9946573894494559, 0.9937425818565851, 0.9947670279764549], [0.9984643019020581, 0.9983939277628073, 0.9975731098314122, 1, 0.9981355836726453, 0.9979193621533013, 0.9970370069933576, 0.9975967643237799, 0.9974604027224387, 0.9980678288994417], [0.9969633572502489, 0.9992036594273627, 0.998686547946945, 0.9981355836726453, 1, 0.9967215798681307, 0.994846406212694, 0.9951638447670625, 0.9950892285157095, 0.9955399696835043], [0.9974351591334155, 0.9975590056806908, 0.9964706506810657, 0.9979193621533013, 0.9967215798681307, 1, 0.9989350101594349, 0.9979583457594758, 0.9981095640167412, 0.9978844850266538], [0.9967177858122079, 0.995790165733491, 0.9942931625967936, 0.9970370069933576, 0.994846406212694, 0.9989350101594349, 1, 0.998658551958691, 0.9986951448998378, 0.9977943576087484], [0.9971146721301697, 0.9959569877876862, 0.9946573894494559, 0.9975967643237799, 0.9951638447670625, 0.9979583457594758, 0.998658551958691, 1, 0.9981708668778816, 0.9980238604079705], [0.9971969990467686, 0.9956404132190135, 0.9937425818565851, 0.9974604027224387, 0.9950892285157095, 0.9981095640167412, 0.9986951448998378, 0.9981708668778816, 1, 0.9986235359865366], [0.9980915644204437, 0.9967150079041476, 0.9947670279764549, 0.9980678288994417, 0.9955399696835043, 0.9978844850266538, 0.9977943576087484, 0.9980238604079705, 0.9986235359865366, 1]]
+model_num of model 0 used
+-- 5 --
+model_num of model 1 used
+-- 5 --
+model_num of model 2 used
+-- 5 --
+model_num of model 3 used
+-- 5 --
+model_num of model 4 used
+-- 5 --
+model_num of model 5 used
+-- 5 --
+model_num of model 6 used
+-- 5 --
+model_num of model 7 used
+-- 5 --
+model_num of model 8 used
+-- 5 --
+model_num of model 9 used
+-- 5 --
+test performance ... 
+0.7519946808510638
+0.6860039893617021
+0.7528257978723404
+0.7365359042553191
+0.7391954787234043
+0.7483377659574468
+0.7601396276595744
+0.668716755319149
+0.7509973404255319
+0.8006981382978723
+updates models ...
+model 0 starting alignment with public logits... 
+model 0 done alignment
+model 0 starting training with private data... 
+model 0 done private training. 
+
+model 1 starting alignment with public logits... 
+model 1 done alignment
+model 1 starting training with private data... 
+model 1 done private training. 
+
+model 2 starting alignment with public logits... 
+model 2 done alignment
+model 2 starting training with private data... 
+model 2 done private training. 
+
+model 3 starting alignment with public logits... 
+model 3 done alignment
+model 3 starting training with private data... 
+model 3 done private training. 
+
+model 4 starting alignment with public logits... 
+model 4 done alignment
+model 4 starting training with private data... 
+model 4 done private training. 
+
+model 5 starting alignment with public logits... 
+model 5 done alignment
+model 5 starting training with private data... 
+model 5 done private training. 
+
+model 6 starting alignment with public logits... 
+model 6 done alignment
+model 6 starting training with private data... 
+model 6 done private training. 
+
+model 7 starting alignment with public logits... 
+model 7 done alignment
+model 7 starting training with private data... 
+model 7 done private training. 
+
+model 8 starting alignment with public logits... 
+model 8 done alignment
+model 8 starting training with private data... 
+model 8 done private training. 
+
+model 9 starting alignment with public logits... 
+model 9 done alignment
+model 9 starting training with private data... 
+model 9 done private training. 
+
+round  6
+update logits ... 
+cosdist:
+[[1, 0.9985900491784689, 0.9989480064651819, 0.9977312813335236, 0.9988732806485519, 0.9987498095558994, 0.997693056910992, 0.9984798001057529, 0.9977315622120736, 0.9985924086978251], [0.9985900491784689, 1, 0.9991860754996078, 0.9988711767519125, 0.9993104039890417, 0.9976457210490633, 0.9955329708099964, 0.9971751704577949, 0.9961971221265653, 0.9972349613409092], [0.9989480064651819, 0.9991860754996078, 1, 0.9985381980919764, 0.9994694934432562, 0.9973462158086158, 0.9949727858271498, 0.9968149581689923, 0.9954226972703164, 0.9973768099163443], [0.9977312813335236, 0.9988711767519125, 0.9985381980919764, 1, 0.9986666339956869, 0.9972508097540239, 0.9946216852548181, 0.9960692661498968, 0.9958150100709863, 0.9975070735005188], [0.9988732806485519, 0.9993104039890417, 0.9994694934432562, 0.9986666339956869, 1, 0.9974425932245236, 0.9953575995102284, 0.9967901145104261, 0.9958838712897046, 0.9976215778392874], [0.9987498095558994, 0.9976457210490633, 0.9973462158086158, 0.9972508097540239, 0.9974425932245236, 1, 0.9986900925150757, 0.9991361340300978, 0.9988269097972707, 0.9989523973537306], [0.997693056910992, 0.9955329708099964, 0.9949727858271498, 0.9946216852548181, 0.9953575995102284, 0.9986900925150757, 1, 0.9988350819538636, 0.9992516962893839, 0.9981258718525161], [0.9984798001057529, 0.9971751704577949, 0.9968149581689923, 0.9960692661498968, 0.9967901145104261, 0.9991361340300978, 0.9988350819538636, 1, 0.9988260950552619, 0.9984454254581607], [0.9977315622120736, 0.9961971221265653, 0.9954226972703164, 0.9958150100709863, 0.9958838712897046, 0.9988269097972707, 0.9992516962893839, 0.9988260950552619, 1, 0.9987413426275589], [0.9985924086978251, 0.9972349613409092, 0.9973768099163443, 0.9975070735005188, 0.9976215778392874, 0.9989523973537306, 0.9981258718525161, 0.9984454254581607, 0.9987413426275589, 1]]
+model_num of model 0 used
+-- 5 --
+model_num of model 1 used
+-- 5 --
+model_num of model 2 used
+-- 5 --
+model_num of model 3 used
+-- 5 --
+model_num of model 4 used
+-- 5 --
+model_num of model 5 used
+-- 5 --
+model_num of model 6 used
+-- 5 --
+model_num of model 7 used
+-- 5 --
+model_num of model 8 used
+-- 5 --
+model_num of model 9 used
+-- 5 --
+test performance ... 
+0.7342087765957447
+0.7538231382978723
+0.7845744680851063
+0.7869015957446809
+0.7749335106382979
+0.7880651595744681
+0.719248670212766
+0.7237367021276596
+0.75
+0.7613031914893617
+updates models ...
+model 0 starting alignment with public logits... 
+model 0 done alignment
+model 0 starting training with private data... 
+model 0 done private training. 
+
+model 1 starting alignment with public logits... 
+model 1 done alignment
+model 1 starting training with private data... 
+model 1 done private training. 
+
+model 2 starting alignment with public logits... 
+model 2 done alignment
+model 2 starting training with private data... 
+model 2 done private training. 
+
+model 3 starting alignment with public logits... 
+model 3 done alignment
+model 3 starting training with private data... 
+model 3 done private training. 
+
+model 4 starting alignment with public logits... 
+model 4 done alignment
+model 4 starting training with private data... 
+model 4 done private training. 
+
+model 5 starting alignment with public logits... 
+model 5 done alignment
+model 5 starting training with private data... 
+model 5 done private training. 
+
+model 6 starting alignment with public logits... 
+model 6 done alignment
+model 6 starting training with private data... 
+model 6 done private training. 
+
+model 7 starting alignment with public logits... 
+model 7 done alignment
+model 7 starting training with private data... 
+model 7 done private training. 
+
+model 8 starting alignment with public logits... 
+model 8 done alignment
+model 8 starting training with private data... 
+model 8 done private training. 
+
+model 9 starting alignment with public logits... 
+model 9 done alignment
+model 9 starting training with private data... 
+model 9 done private training. 
+
+round  7
+update logits ... 
+cosdist:
+[[1, 0.9993892418801087, 0.9993284591294282, 0.9991159076359483, 0.9977201295918042, 0.997764141111713, 0.9987107935393794, 0.9986664148061758, 0.9984496058109102, 0.9986114569319045], [0.9993892418801087, 1, 0.9995807820205925, 0.9995137984344012, 0.9988123619493584, 0.9977509695747961, 0.998031511425819, 0.9981712169232259, 0.9977443891927816, 0.9979948709707406], [0.9993284591294282, 0.9995807820205925, 1, 0.9994209509216915, 0.998404027097234, 0.9971866737648317, 0.9976986849550968, 0.9980527330700656, 0.997338180379039, 0.9974523248727909], [0.9991159076359483, 0.9995137984344012, 0.9994209509216915, 1, 0.9988142178782314, 0.9973224792285984, 0.9974977609375422, 0.9977670307787952, 0.997184647487105, 0.9976871694152154], [0.9977201295918042, 0.9988123619493584, 0.998404027097234, 0.9988142178782314, 1, 0.9951474272813896, 0.9953248399891488, 0.995707806417642, 0.9951658789551947, 0.9958984781999328], [0.997764141111713, 0.9977509695747961, 0.9971866737648317, 0.9973224792285984, 0.9951474272813896, 1, 0.9989457940474524, 0.999023849861013, 0.9990088316875124, 0.9985663846799604], [0.9987107935393794, 0.998031511425819, 0.9976986849550968, 0.9974977609375422, 0.9953248399891488, 0.9989457940474524, 1, 0.999355902439918, 0.9995263282003121, 0.9993250916134715], [0.9986664148061758, 0.9981712169232259, 0.9980527330700656, 0.9977670307787952, 0.995707806417642, 0.999023849861013, 0.999355902439918, 1, 0.9994701260954241, 0.9989912478198976], [0.9984496058109102, 0.9977443891927816, 0.997338180379039, 0.997184647487105, 0.9951658789551947, 0.9990088316875124, 0.9995263282003121, 0.9994701260954241, 1, 0.9991535846094423], [0.9986114569319045, 0.9979948709707406, 0.9974523248727909, 0.9976871694152154, 0.9958984781999328, 0.9985663846799604, 0.9993250916134715, 0.9989912478198976, 0.9991535846094423, 1]]
+model_num of model 0 used
+-- 5 --
+model_num of model 1 used
+-- 5 --
+model_num of model 2 used
+-- 5 --
+model_num of model 3 used
+-- 5 --
+model_num of model 4 used
+-- 5 --
+model_num of model 5 used
+-- 5 --
+model_num of model 6 used
+-- 5 --
+model_num of model 7 used
+-- 5 --
+model_num of model 8 used
+-- 5 --
+model_num of model 9 used
+-- 5 --
+test performance ... 
+0.7578125
+0.7450132978723404
+0.7877327127659575
+0.7652925531914894
+0.8013630319148937
+0.7549867021276596
+0.7403590425531915
+0.6993018617021277
+0.7839095744680851
+0.7682845744680851
+updates models ...
+model 0 starting alignment with public logits... 
+model 0 done alignment
+model 0 starting training with private data... 
+model 0 done private training. 
+
+model 1 starting alignment with public logits... 
+model 1 done alignment
+model 1 starting training with private data... 
+model 1 done private training. 
+
+model 2 starting alignment with public logits... 
+model 2 done alignment
+model 2 starting training with private data... 
+model 2 done private training. 
+
+model 3 starting alignment with public logits... 
+model 3 done alignment
+model 3 starting training with private data... 
+model 3 done private training. 
+
+model 4 starting alignment with public logits... 
+model 4 done alignment
+model 4 starting training with private data... 
+model 4 done private training. 
+
+model 5 starting alignment with public logits... 
+model 5 done alignment
+model 5 starting training with private data... 
+model 5 done private training. 
+
+model 6 starting alignment with public logits... 
+model 6 done alignment
+model 6 starting training with private data... 
+model 6 done private training. 
+
+model 7 starting alignment with public logits... 
+model 7 done alignment
+model 7 starting training with private data... 
+model 7 done private training. 
+
+model 8 starting alignment with public logits... 
+model 8 done alignment
+model 8 starting training with private data... 
+model 8 done private training. 
+
+model 9 starting alignment with public logits... 
+model 9 done alignment
+model 9 starting training with private data... 
+model 9 done private training. 
+
+round  8
+update logits ... 
+cosdist:
+[[1, 0.9989888443851731, 0.9995938410496396, 0.9995273277612918, 0.9991429919284711, 0.9989764354713786, 0.9981458787335855, 0.9984243092032099, 0.9982030180896426, 0.9984841231302958], [0.9989888443851731, 1, 0.9992000337355222, 0.999128803979186, 0.9993888269531781, 0.9977215271748583, 0.9963309159544534, 0.99669469688076, 0.9966594729278636, 0.9970632668284741], [0.9995938410496396, 0.9992000337355222, 1, 0.9993362046188747, 0.9991033212785343, 0.9984623141508208, 0.9971389134893665, 0.9974895827015295, 0.9970850761189057, 0.997806588186555], [0.9995273277612918, 0.999128803979186, 0.9993362046188747, 1, 0.9992098856521617, 0.9985334782038616, 0.9974442109818649, 0.9979588511778124, 0.9976520817690289, 0.9981251271301896], [0.9991429919284711, 0.9993888269531781, 0.9991033212785343, 0.9992098856521617, 1, 0.9974784887760804, 0.9967122455057481, 0.9967817626548976, 0.9971672831521898, 0.996856342116857], [0.9989764354713786, 0.9977215271748583, 0.9984623141508208, 0.9985334782038616, 0.9974784887760804, 1, 0.9990820520733228, 0.999564895894733, 0.9989763054772298, 0.999533403272933], [0.9981458787335855, 0.9963309159544534, 0.9971389134893665, 0.9974442109818649, 0.9967122455057481, 0.9990820520733228, 1, 0.9994302323647111, 0.999565754961312, 0.9984843716892847], [0.9984243092032099, 0.99669469688076, 0.9974895827015295, 0.9979588511778124, 0.9967817626548976, 0.999564895894733, 0.9994302323647111, 1, 0.9993534354135288, 0.9993398240127576], [0.9982030180896426, 0.9966594729278636, 0.9970850761189057, 0.9976520817690289, 0.9971672831521898, 0.9989763054772298, 0.999565754961312, 0.9993534354135288, 1, 0.9985537958185988], [0.9984841231302958, 0.9970632668284741, 0.997806588186555, 0.9981251271301896, 0.996856342116857, 0.999533403272933, 0.9984843716892847, 0.9993398240127576, 0.9985537958185988, 1]]
+model_num of model 0 used
+-- 5 --
+model_num of model 1 used
+-- 5 --
+model_num of model 2 used
+-- 5 --
+model_num of model 3 used
+-- 5 --
+model_num of model 4 used
+-- 5 --
+model_num of model 5 used
+-- 5 --
+model_num of model 6 used
+-- 5 --
+model_num of model 7 used
+-- 5 --
+model_num of model 8 used
+-- 5 --
+model_num of model 9 used
+-- 5 --
+test performance ... 
+0.7704454787234043
+0.7478390957446809
+0.7920545212765957
+0.7298869680851063
+0.7554853723404256
+0.7574800531914894
+0.7373670212765957
+0.6617353723404256
+0.7608045212765957
+0.7124335106382979
+updates models ...
+model 0 starting alignment with public logits... 
+model 0 done alignment
+model 0 starting training with private data... 
+model 0 done private training. 
+
+model 1 starting alignment with public logits... 
+model 1 done alignment
+model 1 starting training with private data... 
+model 1 done private training. 
+
+model 2 starting alignment with public logits... 
+model 2 done alignment
+model 2 starting training with private data... 
+model 2 done private training. 
+
+model 3 starting alignment with public logits... 
+model 3 done alignment
+model 3 starting training with private data... 
+model 3 done private training. 
+
+model 4 starting alignment with public logits... 
+model 4 done alignment
+model 4 starting training with private data... 
+model 4 done private training. 
+
+model 5 starting alignment with public logits... 
+model 5 done alignment
+model 5 starting training with private data... 
+model 5 done private training. 
+
+model 6 starting alignment with public logits... 
+model 6 done alignment
+model 6 starting training with private data... 
+model 6 done private training. 
+
+model 7 starting alignment with public logits... 
+model 7 done alignment
+model 7 starting training with private data... 
+model 7 done private training. 
+
+model 8 starting alignment with public logits... 
+model 8 done alignment
+model 8 starting training with private data... 
+model 8 done private training. 
+
+model 9 starting alignment with public logits... 
+model 9 done alignment
+model 9 starting training with private data... 
+model 9 done private training. 
+
+round  9
+update logits ... 
+cosdist:
+[[1, 0.9990281235721359, 0.9995034984860018, 0.999175283777166, 0.9988592057671528, 0.9981598174865884, 0.9989380862129997, 0.9989596185793133, 0.9985319755842367, 0.9987837892707117], [0.9990281235721359, 1, 0.9994496443969012, 0.9995455431568357, 0.9996645687892901, 0.9980980482246037, 0.9983913799064185, 0.9986604953340046, 0.9984645303793565, 0.999133941091095], [0.9995034984860018, 0.9994496443969012, 1, 0.9994816512092125, 0.9992400129360259, 0.9979657736247572, 0.9984702739106504, 0.9988634815560008, 0.9983986471703798, 0.9987281497633075], [0.999175283777166, 0.9995455431568357, 0.9994816512092125, 1, 0.9994898513938751, 0.9975495335628053, 0.9981192410781742, 0.9984224250613201, 0.9979791650132435, 0.9989124504534704], [0.9988592057671528, 0.9996645687892901, 0.9992400129360259, 0.9994898513938751, 1, 0.9971250742750727, 0.9978002028700277, 0.9979112569428679, 0.9974973094572475, 0.9985703782600915], [0.9981598174865884, 0.9980980482246037, 0.9979657736247572, 0.9975495335628053, 0.9971250742750727, 1, 0.9990705416375641, 0.9991978426985282, 0.999581428780862, 0.9989664184775795], [0.9989380862129997, 0.9983913799064185, 0.9984702739106504, 0.9981192410781742, 0.9978002028700277, 0.9990705416375641, 1, 0.9995710610670357, 0.9992288089095166, 0.9990613508461712], [0.9989596185793133, 0.9986604953340046, 0.9988634815560008, 0.9984224250613201, 0.9979112569428679, 0.9991978426985282, 0.9995710610670357, 1, 0.9994744568724465, 0.9990928633406694], [0.9985319755842367, 0.9984645303793565, 0.9983986471703798, 0.9979791650132435, 0.9974973094572475, 0.999581428780862, 0.9992288089095166, 0.9994744568724465, 1, 0.999276929949962], [0.9987837892707117, 0.999133941091095, 0.9987281497633075, 0.9989124504534704, 0.9985703782600915, 0.9989664184775795, 0.9990613508461712, 0.9990928633406694, 0.999276929949962, 1]]
+model_num of model 0 used
+-- 5 --
+model_num of model 1 used
+-- 5 --
+model_num of model 2 used
+-- 5 --
+model_num of model 3 used
+-- 5 --
+model_num of model 4 used
+-- 5 --
+model_num of model 5 used
+-- 5 --
+model_num of model 6 used
+-- 5 --
+model_num of model 7 used
+-- 5 --
+model_num of model 8 used
+-- 5 --
+model_num of model 9 used
+-- 5 --
+test performance ... 
+0.7616356382978723
+0.7325465425531915
+0.7947140957446809
+0.7493351063829787
+0.7486702127659575
+0.7523271276595744
+0.7410239361702128
+0.7076130319148937
+0.7503324468085106
+0.7704454787234043
+updates models ...
+model 0 starting alignment with public logits... 
+model 0 done alignment
+model 0 starting training with private data... 
+model 0 done private training. 
+
+model 1 starting alignment with public logits... 
+model 1 done alignment
+model 1 starting training with private data... 
+model 1 done private training. 
+
+model 2 starting alignment with public logits... 
+model 2 done alignment
+model 2 starting training with private data... 
+model 2 done private training. 
+
+model 3 starting alignment with public logits... 
+model 3 done alignment
+model 3 starting training with private data... 
+model 3 done private training. 
+
+model 4 starting alignment with public logits... 
+model 4 done alignment
+model 4 starting training with private data... 
+model 4 done private training. 
+
+model 5 starting alignment with public logits... 
+model 5 done alignment
+model 5 starting training with private data... 
+model 5 done private training. 
+
+model 6 starting alignment with public logits... 
+model 6 done alignment
+model 6 starting training with private data... 
+model 6 done private training. 
+
+model 7 starting alignment with public logits... 
+model 7 done alignment
+model 7 starting training with private data... 
+model 7 done private training. 
+
+model 8 starting alignment with public logits... 
+model 8 done alignment
+model 8 starting training with private data... 
+model 8 done private training. 
+
+model 9 starting alignment with public logits... 
+model 9 done alignment
+model 9 starting training with private data... 
+model 9 done private training. 
+
+round  10
+update logits ... 
+cosdist:
+[[1, 0.9983656181168413, 0.9995457298932793, 0.9995726272012079, 0.9991110455338865, 0.9991004653309822, 0.9989202617304908, 0.9991991808886634, 0.99907058254846, 0.9989411293122844], [0.9983656181168413, 1, 0.9988876513541887, 0.9991638914317819, 0.999446809115158, 0.9970333310981269, 0.9962373559225495, 0.9971549888093234, 0.9971185264066905, 0.9972528679383224], [0.9995457298932793, 0.9988876513541887, 1, 0.9994983996097745, 0.9992325967251023, 0.9985234319559558, 0.9980244166244283, 0.9983799912923558, 0.998215514613495, 0.9983856073162677], [0.9995726272012079, 0.9991638914317819, 0.9994983996097745, 1, 0.9994759992866172, 0.9987611032119367, 0.9983996701960415, 0.9988772501608757, 0.9988332150370715, 0.9986709618132361], [0.9991110455338865, 0.999446809115158, 0.9992325967251023, 0.9994759992866172, 1, 0.9976568741136391, 0.9971483600926061, 0.9978263042136223, 0.9977643740112554, 0.9974543033961526], [0.9991004653309822, 0.9970333310981269, 0.9985234319559558, 0.9987611032119367, 0.9976568741136391, 1, 0.9996354750800369, 0.9994788486940102, 0.9996146004370198, 0.9994985107687265], [0.9989202617304908, 0.9962373559225495, 0.9980244166244283, 0.9983996701960415, 0.9971483600926061, 0.9996354750800369, 1, 0.9995816741366087, 0.9995953424991473, 0.9993584427589859], [0.9991991808886634, 0.9971549888093234, 0.9983799912923558, 0.9988772501608757, 0.9978263042136223, 0.9994788486940102, 0.9995816741366087, 1, 0.9997523927133203, 0.9993953858171998], [0.99907058254846, 0.9971185264066905, 0.998215514613495, 0.9988332150370715, 0.9977643740112554, 0.9996146004370198, 0.9995953424991473, 0.9997523927133203, 1, 0.9993521526690754], [0.9989411293122844, 0.9972528679383224, 0.9983856073162677, 0.9986709618132361, 0.9974543033961526, 0.9994985107687265, 0.9993584427589859, 0.9993953858171998, 0.9993521526690754, 1]]
+model_num of model 0 used
+-- 5 --
+model_num of model 1 used
+-- 5 --
+model_num of model 2 used
+-- 5 --
+model_num of model 3 used
+-- 5 --
+model_num of model 4 used
+-- 5 --
+model_num of model 5 used
+-- 5 --
+model_num of model 6 used
+-- 5 --
+model_num of model 7 used
+-- 5 --
+model_num of model 8 used
+-- 5 --
+model_num of model 9 used
+-- 5 --
+test performance ... 
+0.7716090425531915
+0.6366356382978723
+0.7877327127659575
+0.7212433510638298
+0.8046875
+0.7699468085106383
+0.7445146276595744
+0.7257313829787234
+0.7488364361702128
+0.7578125
+updates models ...
+model 0 starting alignment with public logits... 
+model 0 done alignment
+model 0 starting training with private data... 
+model 0 done private training. 
+
+model 1 starting alignment with public logits... 
+model 1 done alignment
+model 1 starting training with private data... 
+model 1 done private training. 
+
+model 2 starting alignment with public logits... 
+model 2 done alignment
+model 2 starting training with private data... 
+model 2 done private training. 
+
+model 3 starting alignment with public logits... 
+model 3 done alignment
+model 3 starting training with private data... 
+model 3 done private training. 
+
+model 4 starting alignment with public logits... 
+model 4 done alignment
+model 4 starting training with private data... 
+model 4 done private training. 
+
+model 5 starting alignment with public logits... 
+model 5 done alignment
+model 5 starting training with private data... 
+model 5 done private training. 
+
+model 6 starting alignment with public logits... 
+model 6 done alignment
+model 6 starting training with private data... 
+model 6 done private training. 
+
+model 7 starting alignment with public logits... 
+model 7 done alignment
+model 7 starting training with private data... 
+model 7 done private training. 
+
+model 8 starting alignment with public logits... 
+model 8 done alignment
+model 8 starting training with private data... 
+model 8 done private training. 
+
+model 9 starting alignment with public logits... 
+model 9 done alignment
+model 9 starting training with private data... 
+model 9 done private training. 
+
+round  11
+update logits ... 
+cosdist:
+[[1, 0.9993266047419378, 0.9997606257826992, 0.9997655724708677, 0.9992582916689187, 0.998994763037592, 0.9987636892798976, 0.9992507250375618, 0.9981607223211628, 0.9990992487256491], [0.9993266047419378, 1, 0.9993938868006625, 0.9995257448421899, 0.9995564540118176, 0.99851732471008, 0.9982145417467717, 0.9984158918212663, 0.997371210107146, 0.9983969032479586], [0.9997606257826992, 0.9993938868006625, 1, 0.9996831828377277, 0.9992451966933188, 0.9989364831841392, 0.9988188621942441, 0.9992325501417906, 0.9979724761232959, 0.9989577475834377], [0.9997655724708677, 0.9995257448421899, 0.9996831828377277, 1, 0.9995577114634683, 0.9988878099426626, 0.9986308581687022, 0.9991540622909678, 0.9980850042115952, 0.9990598067727027], [0.9992582916689187, 0.9995564540118176, 0.9992451966933188, 0.9995577114634683, 1, 0.9981315936636935, 0.9977956814645174, 0.9983356902657184, 0.997115825715324, 0.9983762776304163], [0.998994763037592, 0.99851732471008, 0.9989364831841392, 0.9988878099426626, 0.9981315936636935, 1, 0.9997992254663267, 0.9994491574592158, 0.9993431034136381, 0.9995240631390483], [0.9987636892798976, 0.9982145417467717, 0.9988188621942441, 0.9986308581687022, 0.9977956814645174, 0.9997992254663267, 1, 0.9994919920495219, 0.999482323916913, 0.9995016749127201], [0.9992507250375618, 0.9984158918212663, 0.9992325501417906, 0.9991540622909678, 0.9983356902657184, 0.9994491574592158, 0.9994919920495219, 1, 0.9993546789313799, 0.9996974236395908], [0.9981607223211628, 0.997371210107146, 0.9979724761232959, 0.9980850042115952, 0.997115825715324, 0.9993431034136381, 0.999482323916913, 0.9993546789313799, 1, 0.999494984409886], [0.9990992487256491, 0.9983969032479586, 0.9989577475834377, 0.9990598067727027, 0.9983762776304163, 0.9995240631390483, 0.9995016749127201, 0.9996974236395908, 0.999494984409886, 1]]
+model_num of model 0 used
+-- 5 --
+model_num of model 1 used
+-- 5 --
+model_num of model 2 used
+-- 5 --
+model_num of model 3 used
+-- 5 --
+model_num of model 4 used
+-- 5 --
+model_num of model 5 used
+-- 5 --
+model_num of model 6 used
+-- 5 --
+model_num of model 7 used
+-- 5 --
+model_num of model 8 used
+-- 5 --
+model_num of model 9 used
+-- 5 --
+test performance ... 
+0.769281914893617
+0.7360372340425532
+0.7842420212765957
+0.7413563829787234
+0.7874002659574468
+0.784906914893617
+0.753656914893617
+0.6771941489361702
+0.7443484042553191
+0.7506648936170213
+updates models ...
+model 0 starting alignment with public logits... 
+model 0 done alignment
+model 0 starting training with private data... 
+model 0 done private training. 
+
+model 1 starting alignment with public logits... 
+model 1 done alignment
+model 1 starting training with private data... 
+model 1 done private training. 
+
+model 2 starting alignment with public logits... 
+model 2 done alignment
+model 2 starting training with private data... 
+model 2 done private training. 
+
+model 3 starting alignment with public logits... 
+model 3 done alignment
+model 3 starting training with private data... 
+model 3 done private training. 
+
+model 4 starting alignment with public logits... 
+model 4 done alignment
+model 4 starting training with private data... 
+model 4 done private training. 
+
+model 5 starting alignment with public logits... 
+model 5 done alignment
+model 5 starting training with private data... 
+model 5 done private training. 
+
+model 6 starting alignment with public logits... 
+model 6 done alignment
+model 6 starting training with private data... 
+model 6 done private training. 
+
+model 7 starting alignment with public logits... 
+model 7 done alignment
+model 7 starting training with private data... 
+model 7 done private training. 
+
+model 8 starting alignment with public logits... 
+model 8 done alignment
+model 8 starting training with private data... 
+model 8 done private training. 
+
+model 9 starting alignment with public logits... 
+model 9 done alignment
+model 9 starting training with private data... 
+model 9 done private training. 
+
+round  12
+update logits ... 
+cosdist:
+[[1, 0.9989736484918105, 0.9996554169019366, 0.9997437681161044, 0.9994879811096985, 0.9992495898131212, 0.9990533380895671, 0.9994946380346467, 0.9990619283738711, 0.9994525418968744], [0.9989736484918105, 1, 0.9994654163827885, 0.9993904409037869, 0.9992944099981685, 0.998422237269504, 0.997844452143843, 0.9983074048422711, 0.9976054257112983, 0.9984380763840995], [0.9996554169019366, 0.9994654163827885, 1, 0.9996991024927087, 0.9994313065099716, 0.9991488293526143, 0.998858556343885, 0.9992233965877951, 0.9985529174334338, 0.9991002990823398], [0.9997437681161044, 0.9993904409037869, 0.9996991024927087, 1, 0.9996558024343689, 0.9990907959900027, 0.9987905976948418, 0.9993536104132565, 0.9987536874327578, 0.999280556330005], [0.9994879811096985, 0.9992944099981685, 0.9994313065099716, 0.9996558024343689, 1, 0.9991179486209214, 0.998874662545084, 0.9990981346048736, 0.9987452506766584, 0.9992011388391073], [0.9992495898131212, 0.998422237269504, 0.9991488293526143, 0.9990907959900027, 0.9991179486209214, 1, 0.9997683764641363, 0.9995346535898806, 0.999662230777989, 0.999531115662264], [0.9990533380895671, 0.997844452143843, 0.998858556343885, 0.9987905976948418, 0.998874662545084, 0.9997683764641363, 1, 0.9995486085387858, 0.9995269907549168, 0.9992940121616556], [0.9994946380346467, 0.9983074048422711, 0.9992233965877951, 0.9993536104132565, 0.9990981346048736, 0.9995346535898806, 0.9995486085387858, 1, 0.9993538992420926, 0.9995392147904354], [0.9990619283738711, 0.9976054257112983, 0.9985529174334338, 0.9987536874327578, 0.9987452506766584, 0.999662230777989, 0.9995269907549168, 0.9993538992420926, 1, 0.9994109460785572], [0.9994525418968744, 0.9984380763840995, 0.9991002990823398, 0.999280556330005, 0.9992011388391073, 0.999531115662264, 0.9992940121616556, 0.9995392147904354, 0.9994109460785572, 1]]
+model_num of model 0 used
+-- 5 --
+model_num of model 1 used
+-- 5 --
+model_num of model 2 used
+-- 5 --
+model_num of model 3 used
+-- 5 --
+model_num of model 4 used
+-- 5 --
+model_num of model 5 used
+-- 5 --
+model_num of model 6 used
+-- 5 --
+model_num of model 7 used
+-- 5 --
+model_num of model 8 used
+-- 5 --
+model_num of model 9 used
+-- 5 --
+test performance ... 
+0.7667885638297872
+0.7132646276595744
+0.7732712765957447
+0.766123670212766
+0.7272273936170213
+0.7579787234042553
+0.761968085106383
+0.6786901595744681
+0.7303856382978723
+0.7483377659574468
+updates models ...
+model 0 starting alignment with public logits... 
+model 0 done alignment
+model 0 starting training with private data... 
+model 0 done private training. 
+
+model 1 starting alignment with public logits... 
+model 1 done alignment
+model 1 starting training with private data... 
+model 1 done private training. 
+
+model 2 starting alignment with public logits... 
+model 2 done alignment
+model 2 starting training with private data... 
+model 2 done private training. 
+
+model 3 starting alignment with public logits... 
+model 3 done alignment
+model 3 starting training with private data... 
+model 3 done private training. 
+
+model 4 starting alignment with public logits... 
+model 4 done alignment
+model 4 starting training with private data... 
+model 4 done private training. 
+
+model 5 starting alignment with public logits... 
+model 5 done alignment
+model 5 starting training with private data... 
+model 5 done private training. 
+
+model 6 starting alignment with public logits... 
+model 6 done alignment
+model 6 starting training with private data... 
+model 6 done private training. 
+
+model 7 starting alignment with public logits... 
+model 7 done alignment
+model 7 starting training with private data... 
+model 7 done private training. 
+
+model 8 starting alignment with public logits... 
+model 8 done alignment
+model 8 starting training with private data... 
+model 8 done private training. 
+
+model 9 starting alignment with public logits... 
+model 9 done alignment
+model 9 starting training with private data... 
+model 9 done private training. 
+
+round  13
+update logits ... 
+cosdist:
+[[1, 0.9996020485264282, 0.9998203998499909, 0.9997430454176297, 0.9997254906702024, 0.9992107835522248, 0.9990303691157941, 0.9993228366963839, 0.9989895055652916, 0.9991501621470036], [0.9996020485264282, 1, 0.9996563565454653, 0.9998561557848603, 0.9998323709852887, 0.9988625765335739, 0.9987087670347949, 0.9989931352700693, 0.998726513540584, 0.9985045732551314], [0.9998203998499909, 0.9996563565454653, 1, 0.9997275205976419, 0.9997011827261363, 0.9991399378111435, 0.999085830086893, 0.9992803900636441, 0.9988361082816826, 0.9989686343698029], [0.9997430454176297, 0.9998561557848603, 0.9997275205976419, 1, 0.999817256241881, 0.9990360560521168, 0.9988493196928838, 0.9991881529555139, 0.9989313926937113, 0.9988289388309614], [0.9997254906702024, 0.9998323709852887, 0.9997011827261363, 0.999817256241881, 1, 0.9991020210443412, 0.9989384053773581, 0.9992525334817121, 0.9989364256184342, 0.9989456626973621], [0.9992107835522248, 0.9988625765335739, 0.9991399378111435, 0.9990360560521168, 0.9991020210443412, 1, 0.9998265570365045, 0.9997900581829621, 0.9996814056488674, 0.9995252658173385], [0.9990303691157941, 0.9987087670347949, 0.999085830086893, 0.9988493196928838, 0.9989384053773581, 0.9998265570365045, 1, 0.9997211278883443, 0.9996352983315732, 0.9993923618941469], [0.9993228366963839, 0.9989931352700693, 0.9992803900636441, 0.9991881529555139, 0.9992525334817121, 0.9997900581829621, 0.9997211278883443, 1, 0.9997383970735602, 0.9997142442010379], [0.9989895055652916, 0.998726513540584, 0.9988361082816826, 0.9989313926937113, 0.9989364256184342, 0.9996814056488674, 0.9996352983315732, 0.9997383970735602, 1, 0.9995843327258508], [0.9991501621470036, 0.9985045732551314, 0.9989686343698029, 0.9988289388309614, 0.9989456626973621, 0.9995252658173385, 0.9993923618941469, 0.9997142442010379, 0.9995843327258508, 1]]
+model_num of model 0 used
+-- 5 --
+model_num of model 1 used
+-- 5 --
+model_num of model 2 used
+-- 5 --
+model_num of model 3 used
+-- 5 --
+model_num of model 4 used
+-- 5 --
+model_num of model 5 used
+-- 5 --
+model_num of model 6 used
+-- 5 --
+model_num of model 7 used
+-- 5 --
+model_num of model 8 used
+-- 5 --
+model_num of model 9 used
+-- 5 --
+test performance ... 
+0.7644614361702128
+0.7391954787234043
+0.7850731382978723
+0.7611369680851063
+0.7814162234042553
+0.7784242021276596
+0.7440159574468085
+0.7029587765957447
+0.7320478723404256
+0.7689494680851063
+updates models ...
+model 0 starting alignment with public logits... 
+model 0 done alignment
+model 0 starting training with private data... 
+model 0 done private training. 
+
+model 1 starting alignment with public logits... 
+model 1 done alignment
+model 1 starting training with private data... 
+model 1 done private training. 
+
+model 2 starting alignment with public logits... 
+model 2 done alignment
+model 2 starting training with private data... 
+model 2 done private training. 
+
+model 3 starting alignment with public logits... 
+model 3 done alignment
+model 3 starting training with private data... 
+model 3 done private training. 
+
+model 4 starting alignment with public logits... 
+model 4 done alignment
+model 4 starting training with private data... 
+model 4 done private training. 
+
+model 5 starting alignment with public logits... 
+model 5 done alignment
+model 5 starting training with private data... 
+model 5 done private training. 
+
+model 6 starting alignment with public logits... 
+model 6 done alignment
+model 6 starting training with private data... 
+model 6 done private training. 
+
+model 7 starting alignment with public logits... 
+model 7 done alignment
+model 7 starting training with private data... 
+model 7 done private training. 
+
+model 8 starting alignment with public logits... 
+model 8 done alignment
+model 8 starting training with private data... 
+model 8 done private training. 
+
+model 9 starting alignment with public logits... 
+model 9 done alignment
+model 9 starting training with private data... 
+model 9 done private training. 
+
+round  14
+update logits ... 
+cosdist:
+[[1, 0.9992545708509807, 0.9997393385988627, 0.9993914373473629, 0.9987589258113321, 0.999668638619724, 0.9995693174134185, 0.9994201011287009, 0.999448145208587, 0.9995016605460019], [0.9992545708509807, 1, 0.9996242644643387, 0.9997989472356192, 0.9996922743450212, 0.9990417689464459, 0.9987433269134648, 0.9991563724780217, 0.9991006151742277, 0.9989318138557503], [0.9997393385988627, 0.9996242644643387, 1, 0.9996747360543088, 0.9992829396235842, 0.9994467311159818, 0.9993359902288291, 0.9993764543862983, 0.9993835451024811, 0.9994636496658605], [0.9993914373473629, 0.9997989472356192, 0.9996747360543088, 1, 0.9996089275544534, 0.9991986764463574, 0.9989750818797467, 0.9992893862227392, 0.9993093537342385, 0.999204640836958], [0.9987589258113321, 0.9996922743450212, 0.9992829396235842, 0.9996089275544534, 1, 0.998544850387493, 0.9982066773197613, 0.9987121470875223, 0.9985877108184055, 0.998522399438396], [0.999668638619724, 0.9990417689464459, 0.9994467311159818, 0.9991986764463574, 0.998544850387493, 1, 0.9998065606873624, 0.9997261889152903, 0.9997376914851925, 0.9995411983700766], [0.9995693174134185, 0.9987433269134648, 0.9993359902288291, 0.9989750818797467, 0.9982066773197613, 0.9998065606873624, 1, 0.9996716291527756, 0.9997740849648646, 0.9996379086885516], [0.9994201011287009, 0.9991563724780217, 0.9993764543862983, 0.9992893862227392, 0.9987121470875223, 0.9997261889152903, 0.9996716291527756, 1, 0.9997705616654569, 0.9993701738354128], [0.999448145208587, 0.9991006151742277, 0.9993835451024811, 0.9993093537342385, 0.9985877108184055, 0.9997376914851925, 0.9997740849648646, 0.9997705616654569, 1, 0.999602757013522], [0.9995016605460019, 0.9989318138557503, 0.9994636496658605, 0.999204640836958, 0.998522399438396, 0.9995411983700766, 0.9996379086885516, 0.9993701738354128, 0.999602757013522, 1]]
+model_num of model 0 used
+-- 5 --
+model_num of model 1 used
+-- 5 --
+model_num of model 2 used
+-- 5 --
+model_num of model 3 used
+-- 5 --
+model_num of model 4 used
+-- 5 --
+model_num of model 5 used
+-- 5 --
+model_num of model 6 used
+-- 5 --
+model_num of model 7 used
+-- 5 --
+model_num of model 8 used
+-- 5 --
+model_num of model 9 used
+-- 5 --
+test performance ... 
+0.7470079787234043
+0.7386968085106383
+0.777593085106383
+0.7332114361702128
+0.796875
+0.7835771276595744
+0.7647938829787234
+0.7290558510638298
+0.7180851063829787
+0.7586436170212766
+updates models ...
+model 0 starting alignment with public logits... 
+model 0 done alignment
+model 0 starting training with private data... 
+model 0 done private training. 
+
+model 1 starting alignment with public logits... 
+model 1 done alignment
+model 1 starting training with private data... 
+model 1 done private training. 
+
+model 2 starting alignment with public logits... 
+model 2 done alignment
+model 2 starting training with private data... 
+model 2 done private training. 
+
+model 3 starting alignment with public logits... 
+model 3 done alignment
+model 3 starting training with private data... 
+model 3 done private training. 
+
+model 4 starting alignment with public logits... 
+model 4 done alignment
+model 4 starting training with private data... 
+model 4 done private training. 
+
+model 5 starting alignment with public logits... 
+model 5 done alignment
+model 5 starting training with private data... 
+model 5 done private training. 
+
+model 6 starting alignment with public logits... 
+model 6 done alignment
+model 6 starting training with private data... 
+model 6 done private training. 
+
+model 7 starting alignment with public logits... 
+model 7 done alignment
+model 7 starting training with private data... 
+model 7 done private training. 
+
+model 8 starting alignment with public logits... 
+model 8 done alignment
+model 8 starting training with private data... 
+model 8 done private training. 
+
+model 9 starting alignment with public logits... 
+model 9 done alignment
+model 9 starting training with private data... 
+model 9 done private training. 
+
+round  15
+update logits ... 
+cosdist:
+[[1, 0.9994716838003156, 0.9998275545411597, 0.9995118526745052, 0.9996025966885673, 0.9996026617005243, 0.9994919356038967, 0.9995959478687483, 0.9994441298837673, 0.9995381612380558], [0.9994716838003156, 1, 0.9993464640757769, 0.9996918651062797, 0.9998641554832399, 0.99909503801024, 0.9990702148225503, 0.999154424115929, 0.9989927733381803, 0.9990050849924289], [0.9998275545411597, 0.9993464640757769, 1, 0.9992663895934293, 0.999506617481749, 0.9996008942155472, 0.9994162489734609, 0.9996188366487057, 0.9994898637150156, 0.9995371451783518], [0.9995118526745052, 0.9996918651062797, 0.9992663895934293, 1, 0.9995972012551702, 0.9990116024803528, 0.9990677113310106, 0.9990360226544336, 0.9988714361659929, 0.999071804241701], [0.9996025966885673, 0.9998641554832399, 0.999506617481749, 0.9995972012551702, 1, 0.9992563977818106, 0.9991453374122505, 0.9993532390050721, 0.9991892550295295, 0.9991334800481988], [0.9996026617005243, 0.99909503801024, 0.9996008942155472, 0.9990116024803528, 0.9992563977818106, 1, 0.9998648438189544, 0.999812934165891, 0.9997788717076718, 0.9997398098025138], [0.9994919356038967, 0.9990702148225503, 0.9994162489734609, 0.9990677113310106, 0.9991453374122505, 0.9998648438189544, 1, 0.9996542893419664, 0.999616860591654, 0.9996393429440489], [0.9995959478687483, 0.999154424115929, 0.9996188366487057, 0.9990360226544336, 0.9993532390050721, 0.999812934165891, 0.9996542893419664, 1, 0.9998392219583351, 0.9997894538374285], [0.9994441298837673, 0.9989927733381803, 0.9994898637150156, 0.9988714361659929, 0.9991892550295295, 0.9997788717076718, 0.999616860591654, 0.9998392219583351, 1, 0.9997381301298573], [0.9995381612380558, 0.9990050849924289, 0.9995371451783518, 0.999071804241701, 0.9991334800481988, 0.9997398098025138, 0.9996393429440489, 0.9997894538374285, 0.9997381301298573, 1]]
+model_num of model 0 used
+-- 5 --
+model_num of model 1 used
+-- 5 --
+model_num of model 2 used
+-- 5 --
+model_num of model 3 used
+-- 5 --
+model_num of model 4 used
+-- 5 --
+model_num of model 5 used
+-- 5 --
+model_num of model 6 used
+-- 5 --
+model_num of model 7 used
+-- 5 --
+model_num of model 8 used
+-- 5 --
+model_num of model 9 used
+-- 5 --
+test performance ... 
+0.7593085106382979
+0.7513297872340425
+0.7642952127659575
+0.7784242021276596
+0.7744348404255319
+0.7950465425531915
+0.7051196808510638
+0.6728723404255319
+0.7591422872340425
+0.7485039893617021
+updates models ...
+model 0 starting alignment with public logits... 
+model 0 done alignment
+model 0 starting training with private data... 
+model 0 done private training. 
+
+model 1 starting alignment with public logits... 
+model 1 done alignment
+model 1 starting training with private data... 
+model 1 done private training. 
+
+model 2 starting alignment with public logits... 
+model 2 done alignment
+model 2 starting training with private data... 
+model 2 done private training. 
+
+model 3 starting alignment with public logits... 
+model 3 done alignment
+model 3 starting training with private data... 
+model 3 done private training. 
+
+model 4 starting alignment with public logits... 
+model 4 done alignment
+model 4 starting training with private data... 
+model 4 done private training. 
+
+model 5 starting alignment with public logits... 
+model 5 done alignment
+model 5 starting training with private data... 
+model 5 done private training. 
+
+model 6 starting alignment with public logits... 
+model 6 done alignment
+model 6 starting training with private data... 
+model 6 done private training. 
+
+model 7 starting alignment with public logits... 
+model 7 done alignment
+model 7 starting training with private data... 
+model 7 done private training. 
+
+model 8 starting alignment with public logits... 
+model 8 done alignment
+model 8 starting training with private data... 
+model 8 done private training. 
+
+model 9 starting alignment with public logits... 
+model 9 done alignment
+model 9 starting training with private data... 
+model 9 done private training. 
+
+round  16
+update logits ... 
+cosdist:
+[[1, 0.9994434352909769, 0.9997552811239042, 0.9996719424504151, 0.9996354893796758, 0.9994710947866565, 0.9994580037818661, 0.9995440214411583, 0.9996224307165226, 0.9995238447710998], [0.9994434352909769, 1, 0.9993770065845214, 0.9996057722948432, 0.9995347035825605, 0.9989494601104562, 0.9991695947834497, 0.9992390639404231, 0.9990706257666174, 0.9992625524561194], [0.9997552811239042, 0.9993770065845214, 1, 0.9994726949347951, 0.9996757331782469, 0.9995421799206403, 0.999547570109756, 0.999605405531869, 0.9995116798089784, 0.9995581348479717], [0.9996719424504151, 0.9996057722948432, 0.9994726949347951, 1, 0.9995730771111772, 0.9991674266101513, 0.9992469955463176, 0.9994097887494994, 0.9993504869730051, 0.999438479004489], [0.9996354893796758, 0.9995347035825605, 0.9996757331782469, 0.9995730771111772, 1, 0.9995363058280453, 0.9995327795749703, 0.9995041394249489, 0.9995051538837281, 0.9996425862869072], [0.9994710947866565, 0.9989494601104562, 0.9995421799206403, 0.9991674266101513, 0.9995363058280453, 1, 0.9998584553451272, 0.9998274137784248, 0.99987045338143, 0.9998104751069539], [0.9994580037818661, 0.9991695947834497, 0.999547570109756, 0.9992469955463176, 0.9995327795749703, 0.9998584553451272, 1, 0.999886609358457, 0.9997808390284418, 0.9997671294450727], [0.9995440214411583, 0.9992390639404231, 0.999605405531869, 0.9994097887494994, 0.9995041394249489, 0.9998274137784248, 0.999886609358457, 1, 0.999814203058792, 0.9997866448336012], [0.9996224307165226, 0.9990706257666174, 0.9995116798089784, 0.9993504869730051, 0.9995051538837281, 0.99987045338143, 0.9997808390284418, 0.999814203058792, 1, 0.9997878603519977], [0.9995238447710998, 0.9992625524561194, 0.9995581348479717, 0.999438479004489, 0.9996425862869072, 0.9998104751069539, 0.9997671294450727, 0.9997866448336012, 0.9997878603519977, 1]]
+model_num of model 0 used
+-- 5 --
+model_num of model 1 used
+-- 5 --
+model_num of model 2 used
+-- 5 --
+model_num of model 3 used
+-- 5 --
+model_num of model 4 used
+-- 5 --
+model_num of model 5 used
+-- 5 --
+model_num of model 6 used
+-- 5 --
+model_num of model 7 used
+-- 5 --
+model_num of model 8 used
+-- 5 --
+model_num of model 9 used
+-- 5 --
+test performance ... 
+0.769281914893617
+0.7347074468085106
+0.7548204787234043
+0.7737699468085106
+0.7566489361702128
+0.7652925531914894
+0.7470079787234043
+0.706283244680851
+0.7606382978723404
+0.7323803191489362
+updates models ...
+model 0 starting alignment with public logits... 
+model 0 done alignment
+model 0 starting training with private data... 
+model 0 done private training. 
+
+model 1 starting alignment with public logits... 
+model 1 done alignment
+model 1 starting training with private data... 
+model 1 done private training. 
+
+model 2 starting alignment with public logits... 
+model 2 done alignment
+model 2 starting training with private data... 
+model 2 done private training. 
+
+model 3 starting alignment with public logits... 
+model 3 done alignment
+model 3 starting training with private data... 
+model 3 done private training. 
+
+model 4 starting alignment with public logits... 
+model 4 done alignment
+model 4 starting training with private data... 
+model 4 done private training. 
+
+model 5 starting alignment with public logits... 
+model 5 done alignment
+model 5 starting training with private data... 
+model 5 done private training. 
+
+model 6 starting alignment with public logits... 
+model 6 done alignment
+model 6 starting training with private data... 
+model 6 done private training. 
+
+model 7 starting alignment with public logits... 
+model 7 done alignment
+model 7 starting training with private data... 
+model 7 done private training. 
+
+model 8 starting alignment with public logits... 
+model 8 done alignment
+model 8 starting training with private data... 
+model 8 done private training. 
+
+model 9 starting alignment with public logits... 
+model 9 done alignment
+model 9 starting training with private data... 
+model 9 done private training. 
+
+round  17
+update logits ... 
+cosdist:
+[[1, 0.999327133020904, 0.9997774154175635, 0.9993306228642298, 0.9997722833386677, 0.9995966458972905, 0.999469627019925, 0.9993427192123845, 0.9996227009586816, 0.9991266945477246], [0.999327133020904, 1, 0.9992396116511338, 0.9996600715121687, 0.9994960042266112, 0.9990019531156168, 0.9987979243219202, 0.9988858325330747, 0.99934349270124, 0.9989180952692279], [0.9997774154175635, 0.9992396116511338, 1, 0.9994394407735545, 0.999799124917895, 0.9996527545791899, 0.9996416706120651, 0.9994888867687508, 0.9995524301965049, 0.9992381024778678], [0.9993306228642298, 0.9996600715121687, 0.9994394407735545, 1, 0.9995778388484682, 0.9993228603482803, 0.9991140069421537, 0.9992425143681065, 0.9994731326405775, 0.9994521833704646], [0.9997722833386677, 0.9994960042266112, 0.999799124917895, 0.9995778388484682, 1, 0.9995203447342326, 0.9994669912511377, 0.9993471894260303, 0.9996148625629785, 0.9992514859429795], [0.9995966458972905, 0.9990019531156168, 0.9996527545791899, 0.9993228603482803, 0.9995203447342326, 1, 0.9998369315992666, 0.9997577963007239, 0.9997835432272104, 0.9995459525970222], [0.999469627019925, 0.9987979243219202, 0.9996416706120651, 0.9991140069421537, 0.9994669912511377, 0.9998369315992666, 1, 0.9998213508714103, 0.9995965673385566, 0.9992302409120883], [0.9993427192123845, 0.9988858325330747, 0.9994888867687508, 0.9992425143681065, 0.9993471894260303, 0.9997577963007239, 0.9998213508714103, 1, 0.9995452261293912, 0.9991998697062758], [0.9996227009586816, 0.99934349270124, 0.9995524301965049, 0.9994731326405775, 0.9996148625629785, 0.9997835432272104, 0.9995965673385566, 0.9995452261293912, 1, 0.9995597111890444], [0.9991266945477246, 0.9989180952692279, 0.9992381024778678, 0.9994521833704646, 0.9992514859429795, 0.9995459525970222, 0.9992302409120883, 0.9991998697062758, 0.9995597111890444, 1]]
+model_num of model 0 used
+-- 5 --
+model_num of model 1 used
+-- 5 --
+model_num of model 2 used
+-- 5 --
+model_num of model 3 used
+-- 5 --
+model_num of model 4 used
+-- 5 --
+model_num of model 5 used
+-- 5 --
+model_num of model 6 used
+-- 5 --
+model_num of model 7 used
+-- 5 --
+model_num of model 8 used
+-- 5 --
+model_num of model 9 used
+-- 5 --
+test performance ... 
+0.7355385638297872
+0.7381981382978723
+0.7122672872340425
+0.7772606382978723
+0.7789228723404256
+0.7749335106382979
+0.7496675531914894
+0.6883311170212766
+0.7870678191489362
+0.7529920212765957
+updates models ...
+model 0 starting alignment with public logits... 
+model 0 done alignment
+model 0 starting training with private data... 
+model 0 done private training. 
+
+model 1 starting alignment with public logits... 
+model 1 done alignment
+model 1 starting training with private data... 
+model 1 done private training. 
+
+model 2 starting alignment with public logits... 
+model 2 done alignment
+model 2 starting training with private data... 
+model 2 done private training. 
+
+model 3 starting alignment with public logits... 
+model 3 done alignment
+model 3 starting training with private data... 
+model 3 done private training. 
+
+model 4 starting alignment with public logits... 
+model 4 done alignment
+model 4 starting training with private data... 
+model 4 done private training. 
+
+model 5 starting alignment with public logits... 
+model 5 done alignment
+model 5 starting training with private data... 
+model 5 done private training. 
+
+model 6 starting alignment with public logits... 
+model 6 done alignment
+model 6 starting training with private data... 
+model 6 done private training. 
+
+model 7 starting alignment with public logits... 
+model 7 done alignment
+model 7 starting training with private data... 
+model 7 done private training. 
+
+model 8 starting alignment with public logits... 
+model 8 done alignment
+model 8 starting training with private data... 
+model 8 done private training. 
+
+model 9 starting alignment with public logits... 
+model 9 done alignment
+model 9 starting training with private data... 
+model 9 done private training. 
+
+round  18
+update logits ... 
+cosdist:
+[[1, 0.9994868879833125, 0.9998248157748375, 0.9997639952169988, 0.9995724855331168, 0.9996632996442087, 0.9996528804455446, 0.9996268079885459, 0.9996026836722334, 0.9996614043283433], [0.9994868879833125, 1, 0.999633200393532, 0.9997644363106964, 0.9999031169451296, 0.999252167755494, 0.9989864046158751, 0.9996235694182933, 0.9994222526819244, 0.9993844785089292], [0.9998248157748375, 0.999633200393532, 1, 0.9997509509580658, 0.9996476042307055, 0.9994066500361418, 0.9993220425181363, 0.9995570463989297, 0.9994650530350332, 0.999538261125217], [0.9997639952169988, 0.9997644363106964, 0.9997509509580658, 1, 0.9998080033666265, 0.9994847289502392, 0.9993331619515998, 0.9995949284759839, 0.9995638386065, 0.999620155515399], [0.9995724855331168, 0.9999031169451296, 0.9996476042307055, 0.9998080033666265, 1, 0.9994034871276104, 0.9991668624117969, 0.9996518793244566, 0.9995276651716396, 0.9994570938756806], [0.9996632996442087, 0.999252167755494, 0.9994066500361418, 0.9994847289502392, 0.9994034871276104, 1, 0.9998634090972959, 0.9997365877363655, 0.9998353493630081, 0.9997150832185578], [0.9996528804455446, 0.9989864046158751, 0.9993220425181363, 0.9993331619515998, 0.9991668624117969, 0.9998634090972959, 1, 0.9996264474051751, 0.999723402153692, 0.9995660046125618], [0.9996268079885459, 0.9996235694182933, 0.9995570463989297, 0.9995949284759839, 0.9996518793244566, 0.9997365877363655, 0.9996264474051751, 1, 0.9997509142003883, 0.9996539710809759], [0.9996026836722334, 0.9994222526819244, 0.9994650530350332, 0.9995638386065, 0.9995276651716396, 0.9998353493630081, 0.999723402153692, 0.9997509142003883, 1, 0.999696107123523], [0.9996614043283433, 0.9993844785089292, 0.999538261125217, 0.999620155515399, 0.9994570938756806, 0.9997150832185578, 0.9995660046125618, 0.9996539710809759, 0.999696107123523, 1]]
+model_num of model 0 used
+-- 5 --
+model_num of model 1 used
+-- 5 --
+model_num of model 2 used
+-- 5 --
+model_num of model 3 used
+-- 5 --
+model_num of model 4 used
+-- 5 --
+model_num of model 5 used
+-- 5 --
+model_num of model 6 used
+-- 5 --
+model_num of model 7 used
+-- 5 --
+model_num of model 8 used
+-- 5 --
+model_num of model 9 used
+-- 5 --
+test performance ... 
+0.773936170212766
+0.7629654255319149
+0.784408244680851
+0.7716090425531915
+0.7386968085106383
+0.7646276595744681
+0.7493351063829787
+0.6956449468085106
+0.7586436170212766
+0.7584773936170213
+updates models ...
+model 0 starting alignment with public logits... 
+model 0 done alignment
+model 0 starting training with private data... 
+model 0 done private training. 
+
+model 1 starting alignment with public logits... 
+model 1 done alignment
+model 1 starting training with private data... 
+model 1 done private training. 
+
+model 2 starting alignment with public logits... 
+model 2 done alignment
+model 2 starting training with private data... 
+model 2 done private training. 
+
+model 3 starting alignment with public logits... 
+model 3 done alignment
+model 3 starting training with private data... 
+model 3 done private training. 
+
+model 4 starting alignment with public logits... 
+model 4 done alignment
+model 4 starting training with private data... 
+model 4 done private training. 
+
+model 5 starting alignment with public logits... 
+model 5 done alignment
+model 5 starting training with private data... 
+model 5 done private training. 
+
+model 6 starting alignment with public logits... 
+model 6 done alignment
+model 6 starting training with private data... 
+model 6 done private training. 
+
+model 7 starting alignment with public logits... 
+model 7 done alignment
+model 7 starting training with private data... 
+model 7 done private training. 
+
+model 8 starting alignment with public logits... 
+model 8 done alignment
+model 8 starting training with private data... 
+model 8 done private training. 
+
+model 9 starting alignment with public logits... 
+model 9 done alignment
+model 9 starting training with private data... 
+model 9 done private training. 
+
+round  19
+update logits ... 
+cosdist:
+[[1, 0.9995734848257534, 0.9998326196650343, 0.9997097137608045, 0.999682788482775, 0.999675595019655, 0.9997131630718256, 0.9997029740746721, 0.9995803186118681, 0.9996341274963052], [0.9995734848257534, 1, 0.9996753124271899, 0.9998838844759117, 0.999902406922443, 0.9993540031974267, 0.9992666303307923, 0.9995787427921691, 0.9994089026658349, 0.9993563693088405], [0.9998326196650343, 0.9996753124271899, 1, 0.9997838196004957, 0.9997173227836254, 0.9996105236312468, 0.9995978827729931, 0.9996698989177423, 0.999552107023511, 0.9996170032820841], [0.9997097137608045, 0.9998838844759117, 0.9997838196004957, 1, 0.9998643393038196, 0.9994813294744022, 0.9993868922722604, 0.9997164311622646, 0.9995433335843085, 0.9995068280320674], [0.999682788482775, 0.999902406922443, 0.9997173227836254, 0.9998643393038196, 1, 0.9994365236429373, 0.9994240944230622, 0.9996213653434654, 0.9994586645273941, 0.9995064217572999], [0.999675595019655, 0.9993540031974267, 0.9996105236312468, 0.9994813294744022, 0.9994365236429373, 1, 0.9998326388832602, 0.9997536862889637, 0.999837909199096, 0.9997346926181656], [0.9997131630718256, 0.9992666303307923, 0.9995978827729931, 0.9993868922722604, 0.9994240944230622, 0.9998326388832602, 1, 0.9997381381792885, 0.9997811421988675, 0.9997923847020173], [0.9997029740746721, 0.9995787427921691, 0.9996698989177423, 0.9997164311622646, 0.9996213653434654, 0.9997536862889637, 0.9997381381792885, 1, 0.9998108542192441, 0.9998279793173568], [0.9995803186118681, 0.9994089026658349, 0.999552107023511, 0.9995433335843085, 0.9994586645273941, 0.999837909199096, 0.9997811421988675, 0.9998108542192441, 1, 0.9997386918397749], [0.9996341274963052, 0.9993563693088405, 0.9996170032820841, 0.9995068280320674, 0.9995064217572999, 0.9997346926181656, 0.9997923847020173, 0.9998279793173568, 0.9997386918397749, 1]]
+model_num of model 0 used
+-- 5 --
+model_num of model 1 used
+-- 5 --
+model_num of model 2 used
+-- 5 --
+model_num of model 3 used
+-- 5 --
+model_num of model 4 used
+-- 5 --
+model_num of model 5 used
+-- 5 --
+model_num of model 6 used
+-- 5 --
+model_num of model 7 used
+-- 5 --
+model_num of model 8 used
+-- 5 --
+model_num of model 9 used
+-- 5 --
+test performance ... 
+0.7265625
+0.7588098404255319
+0.7594747340425532
+0.7593085106382979
+0.7696143617021277
+0.7847406914893617
+0.768783244680851
+0.6803523936170213
+0.7623005319148937
+0.7391954787234043
+updates models ...
+model 0 starting alignment with public logits... 
+model 0 done alignment
+model 0 starting training with private data... 
+model 0 done private training. 
+
+model 1 starting alignment with public logits... 
+model 1 done alignment
+model 1 starting training with private data... 
+model 1 done private training. 
+
+model 2 starting alignment with public logits... 
+model 2 done alignment
+model 2 starting training with private data... 
+model 2 done private training. 
+
+model 3 starting alignment with public logits... 
+model 3 done alignment
+model 3 starting training with private data... 
+model 3 done private training. 
+
+model 4 starting alignment with public logits... 
+model 4 done alignment
+model 4 starting training with private data... 
+model 4 done private training. 
+
+model 5 starting alignment with public logits... 
+model 5 done alignment
+model 5 starting training with private data... 
+model 5 done private training. 
+
+model 6 starting alignment with public logits... 
+model 6 done alignment
+model 6 starting training with private data... 
+model 6 done private training. 
+
+model 7 starting alignment with public logits... 
+model 7 done alignment
+model 7 starting training with private data... 
+model 7 done private training. 
+
+model 8 starting alignment with public logits... 
+model 8 done alignment
+model 8 starting training with private data... 
+model 8 done private training. 
+
+model 9 starting alignment with public logits... 
+model 9 done alignment
+model 9 starting training with private data... 
+model 9 done private training. 
+
+round  20
+update logits ... 
+cosdist:
+[[1, 0.9996686747616039, 0.9999014007414431, 0.9998329243333699, 0.9998298796076869, 0.999660160190996, 0.999616039870305, 0.9996743528911676, 0.9997096779183041, 0.9996356703415358], [0.9996686747616039, 1, 0.999545191265972, 0.9997204750367975, 0.9997746741555354, 0.9992713308118386, 0.999167323991109, 0.9993312876926378, 0.9993707668444632, 0.9992046687035729], [0.9999014007414431, 0.999545191265972, 1, 0.9997643573604466, 0.999779345566952, 0.9997095833888845, 0.9997081860741658, 0.9997016643537765, 0.9997078737331668, 0.9996302589945734], [0.9998329243333699, 0.9997204750367975, 0.9997643573604466, 1, 0.9998538511311227, 0.9995476901835209, 0.9994132026917548, 0.9996465390235036, 0.9995702854040657, 0.9995161922185568], [0.9998298796076869, 0.9997746741555354, 0.999779345566952, 0.9998538511311227, 1, 0.9995808130938465, 0.9995129887204578, 0.9996576393674065, 0.9995945504255068, 0.9995140006260479], [0.999660160190996, 0.9992713308118386, 0.9997095833888845, 0.9995476901835209, 0.9995808130938465, 1, 0.9998958956345542, 0.9998883816762614, 0.9998570312192474, 0.9997901879141562], [0.999616039870305, 0.999167323991109, 0.9997081860741658, 0.9994132026917548, 0.9995129887204578, 0.9998958956345542, 1, 0.9998295918026098, 0.999866147475363, 0.9997771361991536], [0.9996743528911676, 0.9993312876926378, 0.9997016643537765, 0.9996465390235036, 0.9996576393674065, 0.9998883816762614, 0.9998295918026098, 1, 0.9998062379575869, 0.9998698054054989], [0.9997096779183041, 0.9993707668444632, 0.9997078737331668, 0.9995702854040657, 0.9995945504255068, 0.9998570312192474, 0.999866147475363, 0.9998062379575869, 1, 0.9997478441283296], [0.9996356703415358, 0.9992046687035729, 0.9996302589945734, 0.9995161922185568, 0.9995140006260479, 0.9997901879141562, 0.9997771361991536, 0.9998698054054989, 0.9997478441283296, 1]]
+model_num of model 0 used
+-- 5 --
+model_num of model 1 used
+-- 5 --
+model_num of model 2 used
+-- 5 --
+model_num of model 3 used
+-- 5 --
+model_num of model 4 used
+-- 5 --
+model_num of model 5 used
+-- 5 --
+model_num of model 6 used
+-- 5 --
+model_num of model 7 used
+-- 5 --
+model_num of model 8 used
+-- 5 --
+model_num of model 9 used
+-- 5 --
+logits_models:
+[array([[-162.3331  , -156.14165 , -155.17813 , ..., -112.5943  ,
+        -110.80495 , -102.666504],
+       [-145.04784 , -170.26031 , -159.17784 , ..., -109.45156 ,
+         -96.63002 , -101.60509 ],
+       [-201.35593 , -152.7326  , -167.73691 , ..., -105.30131 ,
+        -131.12946 , -111.74717 ],
+       ...,
+       [-140.2385  , -166.52782 , -149.88496 , ...,  -98.91208 ,
+         -95.85741 ,  -99.578865],
+       [-195.72165 , -170.89345 , -181.14116 , ..., -105.70149 ,
+        -123.456116,  -94.65697 ],
+       [-162.14185 , -160.54443 , -160.61806 , ..., -117.23506 ,
+        -111.35848 ,  -92.985374]], dtype=float32), array([[-162.3331  , -156.14165 , -155.17813 , ..., -112.5943  ,
+        -110.80495 , -102.666504],
+       [-145.04784 , -170.26031 , -159.17784 , ..., -109.45156 ,
+         -96.63002 , -101.60509 ],
+       [-201.35593 , -152.7326  , -167.73691 , ..., -105.30131 ,
+        -131.12946 , -111.74717 ],
+       ...,
+       [-140.2385  , -166.52782 , -149.88496 , ...,  -98.91208 ,
+         -95.85741 ,  -99.578865],
+       [-195.72165 , -170.89345 , -181.14116 , ..., -105.70149 ,
+        -123.456116,  -94.65697 ],
+       [-162.14185 , -160.54443 , -160.61806 , ..., -117.23506 ,
+        -111.35848 ,  -92.985374]], dtype=float32), array([[-162.3331  , -156.14165 , -155.17813 , ..., -112.5943  ,
+        -110.80495 , -102.666504],
+       [-145.04784 , -170.26031 , -159.17784 , ..., -109.45156 ,
+         -96.63002 , -101.60509 ],
+       [-201.35593 , -152.7326  , -167.73691 , ..., -105.30131 ,
+        -131.12946 , -111.74717 ],
+       ...,
+       [-140.2385  , -166.52782 , -149.88496 , ...,  -98.91208 ,
+         -95.85741 ,  -99.578865],
+       [-195.72165 , -170.89345 , -181.14116 , ..., -105.70149 ,
+        -123.456116,  -94.65697 ],
+       [-162.14185 , -160.54443 , -160.61806 , ..., -117.23506 ,
+        -111.35848 ,  -92.985374]], dtype=float32), array([[-162.3331  , -156.14165 , -155.17813 , ..., -112.5943  ,
+        -110.80495 , -102.666504],
+       [-145.04784 , -170.26031 , -159.17784 , ..., -109.45156 ,
+         -96.63002 , -101.60509 ],
+       [-201.35593 , -152.7326  , -167.73691 , ..., -105.30131 ,
+        -131.12946 , -111.74717 ],
+       ...,
+       [-140.2385  , -166.52782 , -149.88496 , ...,  -98.91208 ,
+         -95.85741 ,  -99.578865],
+       [-195.72165 , -170.89345 , -181.14116 , ..., -105.70149 ,
+        -123.456116,  -94.65697 ],
+       [-162.14185 , -160.54443 , -160.61806 , ..., -117.23506 ,
+        -111.35848 ,  -92.985374]], dtype=float32), array([[-162.3331  , -156.14165 , -155.17813 , ..., -112.5943  ,
+        -110.80495 , -102.666504],
+       [-145.04784 , -170.26031 , -159.17784 , ..., -109.45156 ,
+         -96.63002 , -101.60509 ],
+       [-201.35593 , -152.7326  , -167.73691 , ..., -105.30131 ,
+        -131.12946 , -111.74717 ],
+       ...,
+       [-140.2385  , -166.52782 , -149.88496 , ...,  -98.91208 ,
+         -95.85741 ,  -99.578865],
+       [-195.72165 , -170.89345 , -181.14116 , ..., -105.70149 ,
+        -123.456116,  -94.65697 ],
+       [-162.14185 , -160.54443 , -160.61806 , ..., -117.23506 ,
+        -111.35848 ,  -92.985374]], dtype=float32), array([[-162.3331  , -156.14165 , -155.17813 , ..., -112.5943  ,
+        -110.80495 , -102.666504],
+       [-145.04784 , -170.26031 , -159.17784 , ..., -109.45156 ,
+         -96.63002 , -101.60509 ],
+       [-201.35593 , -152.7326  , -167.73691 , ..., -105.30131 ,
+        -131.12946 , -111.74717 ],
+       ...,
+       [-140.2385  , -166.52782 , -149.88496 , ...,  -98.91208 ,
+         -95.85741 ,  -99.578865],
+       [-195.72165 , -170.89345 , -181.14116 , ..., -105.70149 ,
+        -123.456116,  -94.65697 ],
+       [-162.14185 , -160.54443 , -160.61806 , ..., -117.23506 ,
+        -111.35848 ,  -92.985374]], dtype=float32), array([[-162.3331  , -156.14165 , -155.17813 , ..., -112.5943  ,
+        -110.80495 , -102.666504],
+       [-145.04784 , -170.26031 , -159.17784 , ..., -109.45156 ,
+         -96.63002 , -101.60509 ],
+       [-201.35593 , -152.7326  , -167.73691 , ..., -105.30131 ,
+        -131.12946 , -111.74717 ],
+       ...,
+       [-140.2385  , -166.52782 , -149.88496 , ...,  -98.91208 ,
+         -95.85741 ,  -99.578865],
+       [-195.72165 , -170.89345 , -181.14116 , ..., -105.70149 ,
+        -123.456116,  -94.65697 ],
+       [-162.14185 , -160.54443 , -160.61806 , ..., -117.23506 ,
+        -111.35848 ,  -92.985374]], dtype=float32), array([[-162.3331  , -156.14165 , -155.17813 , ..., -112.5943  ,
+        -110.80495 , -102.666504],
+       [-145.04784 , -170.26031 , -159.17784 , ..., -109.45156 ,
+         -96.63002 , -101.60509 ],
+       [-201.35593 , -152.7326  , -167.73691 , ..., -105.30131 ,
+        -131.12946 , -111.74717 ],
+       ...,
+       [-140.2385  , -166.52782 , -149.88496 , ...,  -98.91208 ,
+         -95.85741 ,  -99.578865],
+       [-195.72165 , -170.89345 , -181.14116 , ..., -105.70149 ,
+        -123.456116,  -94.65697 ],
+       [-162.14185 , -160.54443 , -160.61806 , ..., -117.23506 ,
+        -111.35848 ,  -92.985374]], dtype=float32), array([[-162.3331  , -156.14165 , -155.17813 , ..., -112.5943  ,
+        -110.80495 , -102.666504],
+       [-145.04784 , -170.26031 , -159.17784 , ..., -109.45156 ,
+         -96.63002 , -101.60509 ],
+       [-201.35593 , -152.7326  , -167.73691 , ..., -105.30131 ,
+        -131.12946 , -111.74717 ],
+       ...,
+       [-140.2385  , -166.52782 , -149.88496 , ...,  -98.91208 ,
+         -95.85741 ,  -99.578865],
+       [-195.72165 , -170.89345 , -181.14116 , ..., -105.70149 ,
+        -123.456116,  -94.65697 ],
+       [-162.14185 , -160.54443 , -160.61806 , ..., -117.23506 ,
+        -111.35848 ,  -92.985374]], dtype=float32), array([[-162.3331  , -156.14165 , -155.17813 , ..., -112.5943  ,
+        -110.80495 , -102.666504],
+       [-145.04784 , -170.26031 , -159.17784 , ..., -109.45156 ,
+         -96.63002 , -101.60509 ],
+       [-201.35593 , -152.7326  , -167.73691 , ..., -105.30131 ,
+        -131.12946 , -111.74717 ],
+       ...,
+       [-140.2385  , -166.52782 , -149.88496 , ...,  -98.91208 ,
+         -95.85741 ,  -99.578865],
+       [-195.72165 , -170.89345 , -181.14116 , ..., -105.70149 ,
+        -123.456116,  -94.65697 ],
+       [-162.14185 , -160.54443 , -160.61806 , ..., -117.23506 ,
+        -111.35848 ,  -92.985374]], dtype=float32)]
+logits_shape:
+(5000, 16)
+test performance ... 
+0.7627992021276596
+0.7288896276595744
+0.7920545212765957
+0.753158244680851
+0.7230718085106383
+0.785405585106383
+0.7388630319148937
+0.7121010638297872
+0.7430186170212766
+0.7398603723404256
